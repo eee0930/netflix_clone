@@ -87,12 +87,26 @@ function ContentsSlider({title, content, keyName, hasBanner}: ISlider) {
         }
     };
 
-    /**
-     * 배너를 보여주는 slider는 배너에 맨 앞의 컨텐츠를 보여주므로 슬라이더 컨텐츠에서 하나를 제외한다.
-     */
-    let sliderContents = data?.results.filter(contentFilter) as IContent[];
+
+    let sliderContents = data?.results?.filter(contentFilter) as IContent[];
+    let BannerContent = data?.results?.filter(contentFilter)[0] as IContent;
     if(hasBanner) {
-        sliderContents = data?.results.filter(contentFilter).slice(1) as IContent[];
+         /**
+         * 배너를 보여주는 slider는 컨텐츠 list들 중 backdrop_path와 overview가 있는 
+         * 맨 앞의 컨텐츠를 보여주므로 슬라이더 컨텐츠에서 하나를 제외한다.
+         * 배너로 보여줄 컨텐츠는 슬라이더에 포함시키지 않기 위해 
+         * Slider Component에서 배너로 쓸 컨턴츠를 미리 지정한다.
+         */
+        const getBannerContent = (contents:IContent[]) => {
+            for(let i = 0; i < contents.length; i++) {
+                const fintContent = contents[i] as IContent;
+                if(fintContent.overview !== "") {
+                    return fintContent;
+                }
+            }
+        };
+        BannerContent = getBannerContent(sliderContents) as IContent;
+        sliderContents = sliderContents.filter(view => view !== BannerContent);
     }
 
     // slide control button을 slider 애니메이션 duration 속도보다 연속으로 빨리 클릭하면
@@ -124,10 +138,7 @@ function ContentsSlider({title, content, keyName, hasBanner}: ISlider) {
         if(data) {
             if(leaving) return;
             toggleLeaving();
-            let totalContents = sliderContents.length;
-            if(hasBanner) {
-                totalContents = sliderContents.length - 1;
-            }
+            const totalContents = sliderContents.length;
             const maxIndex = Math.floor(totalContents / OFFSET) - 1;
             return maxIndex;
         }
@@ -154,9 +165,9 @@ function ContentsSlider({title, content, keyName, hasBanner}: ISlider) {
                     <div></div><div></div>
                 </div>
             </Loader>
-            ) : (<>
+        ) : (<>
             {/* -------------------------[1. Banner]------------------------ */}
-            {hasBanner && <Banner data={data as IGetContentsResult} keyName={keyName} content={content} />}
+            {hasBanner && <Banner bannerData={BannerContent as IContent} keyName={keyName} content={content} />}
             {/* --------------------[2. Contents Slider]-------------------- */}
             <SliderContainer>
                 <SliderBox>
