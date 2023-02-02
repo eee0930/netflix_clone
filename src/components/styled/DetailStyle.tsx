@@ -323,6 +323,7 @@ export const FilmoImage = styled.div`
     color: #fff;
     display: flex;
     aspect-ratio: 99 / 140;
+    font-size: 12px;
     align-items: center;
     justify-content: center;
 `;
