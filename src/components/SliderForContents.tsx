@@ -68,7 +68,7 @@ const infoVariants:Variants = {
 };
 
 
-function ContentsSlider({title, content, keyName, hasBanner}: ISlider) {
+function SliderForContents({title, content, keyName, hasBanner}: ISlider) {
     const {data, isLoading} = useQuery<IGetContentsResult>(
         [content, keyName], 
         () => getContentResults(keyName, content)
@@ -231,4 +231,4 @@ function ContentsSlider({title, content, keyName, hasBanner}: ISlider) {
     </>);
 }
 
-export default ContentsSlider;
+export default SliderForContents;

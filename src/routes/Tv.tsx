@@ -5,7 +5,7 @@ import styled from "styled-components";
 // use
 import { tvState } from "../atoms";
 // component
-import ContentsSlider from "../components/ContentsSlider";
+import SliderForContents from "../components/SliderForContents";
 
 const Wrapper = styled.div`
     background-color: #000;
@@ -15,7 +15,7 @@ const Wrapper = styled.div`
 
 function Tv() {
     const CONTENT = "tv";
-    const getMovies = useRecoilValue(tvState);
+    const getTvs = useRecoilValue(tvState);
     useEffect(() => window.scrollTo(0, 0), []);
     
     return <Wrapper>
@@ -23,8 +23,8 @@ function Tv() {
             <title>{CONTENT.slice(0, 1).toUpperCase() + CONTENT.slice(1)} | Netflix</title>
         </Helmet>
         {/* ---------------------[(component) Sliders]---------------------- */}
-        {getMovies.map((tv, index) => (
-            <ContentsSlider 
+        {getTvs.map((tv, index) => (
+            <SliderForContents 
                 key={tv.keyName} 
                 keyName={tv.keyName} 
                 content={CONTENT} 

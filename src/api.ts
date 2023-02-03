@@ -206,3 +206,9 @@ export function getSearchResults(query: string, content: string) {
         (response) => response.json()
     );
 };
+
+export function getTrendingContents(content: string) {
+    return fetch(`${MOVIE_BASE_FETCH}/trending/${content}/week?api_key=${MOVIE_API_KEY}`).then(
+        (response) => response.json()
+    );
+};

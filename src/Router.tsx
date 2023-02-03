@@ -6,6 +6,7 @@ import Search from "./routes/Search";
 import Tv from "./routes/Tv";
 import DetailTv from "./routes/DetailTv";
 import DetailPerson from "./routes/DetailPerson";
+import Trending from "./routes/Trending";
 
 /**
  * ghpage에 올리기 위해 react-router-dom의 createHashRouter 사용
@@ -33,6 +34,21 @@ const router = createHashRouter([
                     {
                         path: ":keyName/:id",
                         element: <DetailTv />,
+                    },
+                ],
+            },{
+                path: "trending",
+                element: <Trending />,
+                children: [
+                    {
+                        path: "movie/:id",
+                        element: <DetailMovie />,
+                    },{
+                        path: "tv/:id",
+                        element: <DetailTv />,
+                    },{
+                        path: "person/:id",
+                        element: <DetailPerson />
                     },
                 ],
             },{

@@ -69,12 +69,29 @@ export const searchState = atom<ISearchResults[]>({
     ],
 });
 
+export const trendingState = atom<ISearchResults[]>({
+    key: "trending",
+    default: [
+        {
+            content: "movie",
+            title: "Weekly Popular Movies",
+        },{
+            content: "tv",
+            title: "Weekly Popular TV Shows",
+        },{
+            content: "person",
+            title: "Weekly Popular People",
+        },
+    ],
+});
+
 export const rootState = atom<IRootUrl>({
     key: "rootUrl",
     default: {
         movie: "/",
         tv: "/tv",
         search: "/search",
+        trending: "/trending",
     },
 });
 

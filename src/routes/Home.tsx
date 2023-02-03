@@ -5,7 +5,7 @@ import { useRecoilValue } from "recoil";
 // use
 import { moviesState } from "../atoms";
 // component
-import ContentsSlider from "../components/ContentsSlider";
+import SliderForContents from "../components/SliderForContents";
 
 const Wrapper = styled.div`
     background-color: #000;
@@ -24,7 +24,7 @@ function Home() {
         </Helmet>
         {/* ---------------------[(component) Sliders]---------------------- */}
         {getMovies.map((movie, index) => (
-            <ContentsSlider 
+            <SliderForContents 
                 key={movie.keyName} 
                 keyName={movie.keyName} 
                 content={CONTENT} 

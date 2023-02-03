@@ -37,6 +37,7 @@ function Header() {
     const [searchOpen, setSearchOpen] = useState(false);
     const homeMatch = useMatch("/");
     const tvMatch = useMatch("/tv");
+    const trendingMatch = useMatch("/trending");
     const inputAnimation = useAnimation();
     const navAnimation = useAnimation();
     const { scrollY } = useScroll();
@@ -62,7 +63,7 @@ function Header() {
                 navAnimation.start("top")
             }
         });
-    }, [scrollY]);
+    }, [navAnimation, scrollY]);
 
     const { register, handleSubmit } = useForm<IForm>();
     const navigate  = useNavigate();
@@ -97,6 +98,11 @@ function Header() {
                 <Item>
                     <Link to='/tv'>
                         Tv Shows {tvMatch && <Circle layoutId="circle" />}
+                    </Link>
+                </Item>
+                <Item>
+                    <Link to='/trending'>
+                        Weekly Trending {trendingMatch && <Circle layoutId="circle" />}
                     </Link>
                 </Item>
             </Items>
