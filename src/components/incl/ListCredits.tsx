@@ -1,12 +1,12 @@
 import { useQuery } from "react-query";
 import { useRecoilValue } from "recoil";
 // use
-import { getCredits, ICredits } from "../api";
-import { offsetState } from "../atoms";
-import { makeImagePath } from "../util";
+import { getCredits, ICredits } from "../../api";
+import { offsetState } from "../../atoms";
+import { makeImagePath } from "../../util";
 // styled
 import { ListContainer, ListRow, ListBox, ListName, 
-    DetailTitle, FilmoImage, Loader } from "./styled/DetailStyle";
+    DetailTitle, FilmoImage, Loader } from "../styled/DetailStyle";
 
 interface IListCredits {
     id: number;

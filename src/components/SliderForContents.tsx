@@ -8,7 +8,7 @@ import { getContentResults, IContent, IGetContentsResult } from "../api";
 import { makeImagePath } from "../util";
 import { offsetState } from "../atoms";
 // component
-import Banner from "./Banner";
+import Banner from "./incl/Banner";
 import Modal from "./Modal";
 // style
 import { SliderContainer, SliderBox, SliderTitle, 
@@ -79,7 +79,7 @@ function SliderForContents({title, content, keyName, hasBanner}: ISlider) {
      * 국적이 IN인 결과도 제외함 (for Tv)
      */
     const contentFilter = (view : IContent) => {
-        if(view.backdrop_path !== null) {
+        if(view.backdrop_path !== null || view.poster_path !== null) {
             if(view.origin_country && view.origin_country?.indexOf("IN") > -1) {
                 return false;
             }
@@ -202,7 +202,8 @@ function SliderForContents({title, content, keyName, hasBanner}: ISlider) {
                                     transition={{type: "tween"}}
                                     key={content.id}
                                     onClick={() => onBoxClicked(content.id)} >
-                                    <Img boxphoto={makeImagePath(content.backdrop_path, "w300")} />
+                                    <Img boxphoto={makeImagePath(content.backdrop_path? 
+                                        content.backdrop_path : content.poster_path, "w300")} />
                                     <Info variants={infoVariants}>
                                         <h4>{content.name? content.name : content.title}</h4>
                                     </Info>

@@ -8,7 +8,7 @@ import { getTrendingContents, IContent, IGetContentsResult } from "../api";
 import { makeImagePath } from "../util";
 import { offsetState } from "../atoms";
 // component
-import Banner from "./Banner";
+import Banner from "./incl/Banner";
 import ModalForTrending from "./ModalForTrending";
 // style
 import { SliderContainer, SliderBox, SliderTitle, 

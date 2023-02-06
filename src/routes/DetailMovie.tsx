@@ -13,9 +13,9 @@ import { Loader, ContentCover, VideoCover, BigCover, BigTitle, BigOverviewContai
 // incl
 import { StarSvg, UserSvg } from "../Svg";
 // components
-import ListCredits from "../components/ListCredits";
-import ListSimilarContents from "../components/ListSimilarContents";
-import Video from "../components/Video";
+import ListCredits from "../components/incl/ListCredits";
+import ListSimilarContents from "../components/incl/ListSimilarContents";
+import Video from "../components/incl/Video";
 
 interface IDetail {
     id: number;

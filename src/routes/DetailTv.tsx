@@ -15,9 +15,9 @@ import { Loader, BigCover, BigTitle, BigOverviewContainer,
 // incl
 import { StarSvg, UserSvg } from "../Svg";
 // components
-import ListSimilarContents from "../components/ListSimilarContents";
-import ListCredits from "../components/ListCredits";
-import Video from "../components/Video";
+import ListSimilarContents from "../components/incl/ListSimilarContents";
+import ListCredits from "../components/incl/ListCredits";
+import Video from "../components/incl/Video";
 
 interface IDetail {
     id: number;
@@ -84,7 +84,8 @@ function DetailTv() {
                         exit="exit"
                         transition={{duration: 0.5}}
                         style={{backgroundImage: `linear-gradient(to top, #181818, transparent, transparent), 
-                            url(${makeImagePath(data?.backdrop_path as string, "w500")})`}} />
+                            url(${makeImagePath(data?.backdrop_path? 
+                            data?.backdrop_path : data?.poster_path as string, "w500")})`}} />
                     <BigTitle>
                         {data?.name}
                         {data?.original_name && (data?.original_name !== data?.name) && 

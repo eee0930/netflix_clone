@@ -1,11 +1,11 @@
 import { useQuery } from "react-query";
 import { useRecoilValue } from "recoil";
 // use
-import { getSimilarContents, IGetContentsResult } from "../api";
-import { offsetState } from "../atoms";
-import { makeImagePath } from "../util";
+import { getSimilarContents, IGetContentsResult } from "../../api";
+import { offsetState } from "../../atoms";
+import { makeImagePath } from "../../util";
 // styled
-import { ListContainer, ListRow, ListName, DetailTitle, FilmoImage, Loader } from "./styled/DetailStyle";
+import { ListContainer, ListRow, ListName, DetailTitle, FilmoImage, Loader } from "../styled/DetailStyle";
 
 
 interface IListSimilar {

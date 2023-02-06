@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router-dom";
 // use
-import { IContent } from "../api";
-import { makeImagePath } from "../util";
+import { IContent } from "../../api";
+import { makeImagePath } from "../../util";
 // style
-import { BigBanner, Title, Overview, MoreInfoBtn } from "./styled/BannerStyle";
+import { BigBanner, Title, Overview, MoreInfoBtn } from "../styled/BannerStyle";
 // incl
-import { CircleInfoSvg } from "../Svg";
+import { CircleInfoSvg } from "../../Svg";
 
 interface IBanner {
     bannerData: IContent;

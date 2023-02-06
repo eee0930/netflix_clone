@@ -1,9 +1,9 @@
 import { useQuery } from "react-query";
 import styled from "styled-components";
 // use
-import { getContentVideos, IGetVideos, IVideos } from "../api";
+import { getContentVideos, IGetVideos, IVideos } from "../../api";
 // style
-import { Loader } from "./styled/DetailStyle";
+import { Loader } from "../styled/DetailStyle";
 
 const Iframe = styled.iframe`
     width: 100%;
