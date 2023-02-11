@@ -1,6 +1,7 @@
 import { AnimatePresence, useScroll } from "framer-motion";
 import { Outlet, useMatch, useNavigate } from "react-router-dom";
 import { useRecoilValue } from "recoil";
+import { IContentSearch, IKnownFor } from "../api";
 // use
 import { rootState } from "../atoms";
 // incl
@@ -10,8 +11,9 @@ import { Overlay, BigMovie, CloseButton, Svg} from "./styled/ModalStyle";
 
 interface IModal {
     content: string;
+    clickedData?: IContentSearch;
 }
-function ModalForTrending({ content } : IModal) {
+function ModalForTrending({ content, clickedData } : IModal) {
     const navigate = useNavigate();
     const bigContentMatch = useMatch(`/trending/:content/:id`);
     const selectedId = bigContentMatch?.params.id;
@@ -34,10 +36,18 @@ function ModalForTrending({ content } : IModal) {
                     layoutId={selectedId + "_" + selectedContent}
                     topheight={scrollY.get()}> 
                     {/* (Router) Content Detail */}
-                    <Outlet context={{ 
-                        id: selectedId, 
-                        content, 
-                        }} />
+                    {content === 'person' ? (
+                        <Outlet context={{ 
+                            id: selectedId, 
+                            content, 
+                            knownFor: clickedData?.known_for as IKnownFor[], 
+                            }} />
+                    ) : (
+                        <Outlet context={{ 
+                            id: selectedId, 
+                            content, 
+                            }} />
+                    )}
                     <CloseButton onClick={onOverlayClicked}>
                         <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                             <TimesSvg />

@@ -58,9 +58,10 @@ function DetailPerson() {
                         <Biography>{data?.biography}</Biography>
                     </>}
                     {/* 2.2 Signature Works */}
+                    {knownFor.length > 0 && <>
                     <DetailTitle>signature works</DetailTitle>
                     <FilmoContainer>
-                        {knownFor?.map((content) => (
+                        {knownFor.map((content) => (
                             <FilmoCover key={content.id}>
                                 {(content.poster_path || content.backdrop_path) ? (
                                     <FilmoImage style={{
@@ -79,7 +80,7 @@ function DetailPerson() {
                                 </div>
                             </FilmoCover>
                         ))}
-                    </FilmoContainer>
+                    </FilmoContainer></>}
                 </PersonOverviewContainer>
             </PersonDetailContainer>
         </>)}

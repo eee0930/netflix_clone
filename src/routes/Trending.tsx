@@ -1,8 +1,10 @@
+import { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { useRecoilValue } from "recoil";
 import styled from "styled-components";
 import { trendingState } from "../atoms";
 import SliderForTrending from "../components/SliderForTrending";
+import SliderForTrendingPeople from "../components/SliderForTrendingPeople";
 
 const Wrapper = styled.div`
     background-color: #000;
@@ -12,6 +14,7 @@ const Wrapper = styled.div`
 
 function Trending() {
     const getTrendings = useRecoilValue(trendingState);
+    useEffect(() => window.scrollTo(0, 0), []);
     
     return <Wrapper>
         <Helmet>
@@ -19,12 +22,20 @@ function Trending() {
         </Helmet>
         {/* ---------------------[(component) Sliders]---------------------- */}
         {getTrendings.map((trending, index) => (
-            <SliderForTrending 
-                key={index} 
-                content={trending.content} 
-                title={trending.title} 
-                hasBanner={index === 0 ? true : false}
-            />
+            trending.content === 'person' ? (
+                <SliderForTrendingPeople 
+                    key={index} 
+                    content={trending.content} 
+                    title={trending.title} 
+                />
+            ) : (
+                <SliderForTrending 
+                    key={index} 
+                    content={trending.content} 
+                    title={trending.title} 
+                    hasBanner={index === 0 ? true : false}
+                />
+            )
         ))}
     </Wrapper>;
 }
