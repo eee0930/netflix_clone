@@ -15,7 +15,7 @@ const Wrapper = styled.div`
 function Trending() {
     const getTrendings = useRecoilValue(trendingState);
     useEffect(() => window.scrollTo(0, 0), []);
-    
+
     return <Wrapper>
         <Helmet>
             <title>Weekly Trending | Netflix</title>
