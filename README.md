@@ -1,8 +1,11 @@
-# Getting Started with Create React App
+<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=100%&section=header&text=Netflix Clone&fontSize=90" />
+# Netflix_clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You can see the site here ⬇️
+[https://eee0930.github.io/netflix_clone](https://eee0930.github.io/netflix_clone).
 
-## Available Scripts
+
+## Tech Stack
 
 In the project directory, you can run:
 
