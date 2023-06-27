@@ -1,12 +1,12 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Netflix+Clone&fontSize=90" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=black&height=200&section=header&text=Netflix+Clone&fontSize=90" />
 
 
-You can see the site here ⬇️
+You can see the site here ⬇️<br>
 [https://eee0930.github.io/netflix_clone](https://eee0930.github.io/netflix_clone).
 
 
-## 📚 Tech Stack 📚
-### ✨ Library & Languages ✨
+## 📚 Dependencies 📚
+#### ✨ Libraries & Languages ✨
 <div>
 <img src="https://img.shields.io/badge/TypeScript-61DAFB?style=flat&logo=typescript&logoColor=white"/>
 <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white"/>
@@ -18,7 +18,7 @@ You can see the site here ⬇️
 <img src="https://img.shields.io/badge/Framer Motion-0055FF?style=flat&logo=framer&logoColor=white"/>
 </div>
 
-### 🛠️ Tools 🛠️
+#### 🛠️ Tools 🛠️
 <div>
 <img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white"/>
 <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white"/>
