@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=black&height=200&section=header&text=Netflix+Clone&fontSize=90&fontColor=white" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=e51013&height=200&section=header&text=Netflix+Clone&fontSize=90" />
 
 
 You can see the site here ⬇️<br>
