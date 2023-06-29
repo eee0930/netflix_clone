@@ -5,6 +5,8 @@
 
 <br><br>
 
+
+
 ## Project Info
 ### Goal
 <ol>
@@ -19,6 +21,8 @@
 
 
 <br><br>
+
+
 
 ## Getting Started 🏃‍♀️
 ### Requirements
@@ -49,6 +53,8 @@ $ npm run deploy
 
 
 <br><br>
+
+
 
 ## Stacks 📚
 ### Libraries & Languages
@@ -83,11 +89,11 @@ $ npm run deploy
 <br><br>
 
 
+
 ## Screens and Introduction 🎬
 ### 1. list contents
 <div>
 <img width="80%" src="https://github.com/eee0930/netflix_clone/assets/37135523/914f9562-b038-4b06-a5ad-4596fc825a2e.gif"/>
-
 
 #### skills & issues
 <ol>
@@ -104,11 +110,20 @@ $ npm run deploy
 </ol>
 </div>
 
+<br>
+
 ### 3. view details
 <div>
 <img width="80%" src="https://github.com/eee0930/netflix_clone/assets/37135523/0b5e0e36-6a0a-4cd9-9981-4f830ed6ce92.gif"/>
 <p></p>
+
+#### skills & issues
+<ol>
+  <li>Box를 클릭했을 때 URL을 변경시키고, 변화된 URL에 기반해서 상세보기 Modal을 띄우는 애니메이션을 실행시킴.</li>
+</ol>
 </div>
+
+<br>
 
 ### 4. trailer video
 <div>
@@ -116,13 +131,23 @@ $ npm run deploy
 <p></p>
 </div>
 
+<br>
+
 ### 5. search results
 <div>
 <img width="80%" src="https://github.com/eee0930/netflix_clone/assets/37135523/060ddc04-c14a-4b83-9d04-80fb0d986330.gif"/>
 <p></p>
+
+#### skills & issues
+<ol>
+  <li>Router의 useNavigate를 이용하여 검색을 하면 /search로 리다이렉트 되도록 함.</li>
+  <li>useLocation으로 검색어인 param 값을 가져와 해당 검색어에 해당되는 api data를 가져옴.</li>
+</ol>
 </div>
 
 <br><br>
+
+
 
 ## Architecture
 
