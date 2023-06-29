@@ -6,7 +6,7 @@ github pages: [https://eee0930.github.io/netflix_clone](https://eee0930.github.i
 <br><br>
 
 ## Project Info
-#### Goal
+### Goal
 <ol>
   <li>netflix 웹사이트와 비슷하게 연출하여 최신 영화와 tv 프로그램 정보들을 보여줌</li>
   <li>react의 다양한 hook들을 사용하며 state의 효율적인 사용에 대한 고찰 및 연습하기</li>
@@ -14,25 +14,25 @@ github pages: [https://eee0930.github.io/netflix_clone](https://eee0930.github.i
   <li>api에서 제공하는 데이터를 이용하여 user interface를 고려한 화면에 다양한 정보들을 연출하기</li>
 </ol>
 
-#### Period
-2023-01-09 ~ 2023-01-20
+### Period
+>> 2023-01-09 ~ 2023-01-20
 
 
 <br><br>
 
 ## Getting Started 🏃‍♀️
-#### 1. Requirements
+### Requirements
 For building and running the application you need:
 - [npm](https://www.npmjs.com/package/npm/v/9.2.0)
 
-#### 2. Installation
+### Installation
 ``` bash
 $ git clone https://github.com/eee0930/netflix_clone.git
 $ cd netflix_clone
 $ code .
 ```
 
-#### 3. How to run
+### How to run
 - Change the `REACT_APP_MOVIE_API_KEY` on the `.env.example` file.
 - Click on `View` -> `Terminal`.
 - Run 
@@ -41,7 +41,7 @@ $ npm install
 $ npm start
 ```
 
-#### 4. How to deploy?
+### How to deploy?
 ```
 $ npm run deploy
 ```
@@ -50,7 +50,7 @@ $ npm run deploy
 <br><br>
 
 ## Stacks 📚
-#### Libraries & Languages
+### Libraries & Languages
 <div>
 <img src="https://img.shields.io/badge/TypeScript-444444?style=for-the-badge&logo=typescript&logoColor=61DAFB"/>
 <img src="https://img.shields.io/badge/React-333333?style=for-the-badge&logo=React&logoColor=61DAFB"/>
@@ -62,18 +62,18 @@ $ npm run deploy
 <img src="https://img.shields.io/badge/Framer Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white"/>
 </div>
 
-#### Config
+### Config
 <div>
 <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white"/>
 </div>
 
-#### Environment
+### Environment
 <div>
 <img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"/>
 <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
 </div>
 
-#### Communication
+### Communication
 <div>
 <img src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=Slack&logoColor=white"/>
 </div>
@@ -83,12 +83,12 @@ $ npm run deploy
 
 
 ## Screens and Introduction 🎬
-#### 1. list contents
+### 1. list contents
 <div>
 <img width="80%" src="https://github.com/eee0930/netflix_clone/assets/37135523/914f9562-b038-4b06-a5ad-4596fc825a2e.gif"/>
 
 
-##### skills & issues
+#### skills & issues
 <ol>
   <li>movies, tv show, weekly trends 화면에서 재사용할 수 있도록 slider를 compoenent로 나눔</li>
   <li>component가 destroy되거나 render 될 떄 효과를 줄 수 있는 AnimationPresence를 이용하여 slider가 넘어가는 효과를 줌. 
@@ -103,19 +103,19 @@ $ npm run deploy
 </ol>
 </div>
 
-#### 3. view details
+### 3. view details
 <div>
 <img width="80%" src="https://github.com/eee0930/netflix_clone/assets/37135523/0b5e0e36-6a0a-4cd9-9981-4f830ed6ce92.gif"/>
 <p></p>
 </div>
 
-#### 4. trailer video
+### 4. trailer video
 <div>
 <img width="80%" src="https://github.com/eee0930/netflix_clone/assets/37135523/28e99ab8-0ed1-4573-8844-3441f565f9b4.gif"/>
 <p></p>
 </div>
 
-#### 5. search results
+### 5. search results
 <div>
 <img width="80%" src="https://github.com/eee0930/netflix_clone/assets/37135523/060ddc04-c14a-4b83-9d04-80fb0d986330.gif"/>
 <p></p>
@@ -125,7 +125,7 @@ $ npm run deploy
 
 ## Architecture
 
-#### Directory structure
+### Directory structure
 ```bash
  ┣ components
  ┃ ┣ incl : components에 공통적으로 들어가는 components
