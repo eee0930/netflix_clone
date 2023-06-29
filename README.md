@@ -108,8 +108,7 @@ github pages: [https://eee0930.github.io/netflix_clone](https://eee0930.github.i
 ## Architecture
 
 #### Directory structure
-
-src
+```bash
  ┣ components
  ┃ ┣ incl : components에 공통적으로 들어가는 components
  ┃ ┃ ┣ Banner.tsx
