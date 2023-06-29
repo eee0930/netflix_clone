@@ -16,6 +16,7 @@ github pages: [https://eee0930.github.io/netflix_clone](https://eee0930.github.i
 #### Period
 2023-01-09 ~ 2023-01-20
 
+
 ## Stacks 📚
 #### Libraries & Languages
 <div>
@@ -31,7 +32,7 @@ github pages: [https://eee0930.github.io/netflix_clone](https://eee0930.github.i
 
 #### Config
 <div>
-<img src="https://img.shields.io/badge/npm-181717?style=flat&logo=github&logoColor=white"/>
+<img src="https://img.shields.io/badge/npm-CB3837?style=flat&logo=npm&logoColor=white"/>
 </div>
 
 #### Environment
@@ -54,13 +55,13 @@ github pages: [https://eee0930.github.io/netflix_clone](https://eee0930.github.i
 </ol>
 
 ##### skills & issues
-<ul>
+<ol>
   <li>movies, tv show, weekly trends 화면에서 재사용할 수 있도록 slider를 compoenent로 나눔</li>
   <li></li>
   <li></li>
   <li></li>
   <li></li>
-</ul>
+</ol>
 </div>
 
 #### view details
@@ -80,3 +81,11 @@ github pages: [https://eee0930.github.io/netflix_clone](https://eee0930.github.i
 <img width="80%" src="https://github.com/eee0930/netflix_clone/assets/37135523/060ddc04-c14a-4b83-9d04-80fb0d986330.gif"/>
 <p></p>
 </div>
+
+
+## How to run 🏃‍♀️
+
+- Open this folder on VSCode.
+- Click on `View` -> `Terminal`.
+- Run `npm i`.
+- Run `npm start`.
