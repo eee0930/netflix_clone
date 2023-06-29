@@ -1,7 +1,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=e51013&height=200&section=header&text=Netflix+Clone&fontSize=80" />
 
 ## Deployment
-github pages: [https://eee0930.github.io/netflix_clone](https://eee0930.github.io/netflix_clone).
+**github pages:** [https://eee0930.github.io/netflix_clone](https://eee0930.github.io/netflix_clone).
 
 <br><br>
 
@@ -15,7 +15,7 @@ github pages: [https://eee0930.github.io/netflix_clone](https://eee0930.github.i
 </ol>
 
 ### Period
->> 2023-01-09 ~ 2023-01-20
+> 2023-01-09 ~ 2023-01-20
 
 
 <br><br>
@@ -42,6 +42,7 @@ $ npm start
 ```
 
 ### How to deploy?
+- Change the `homepage` on the `package.json` file.
 ```
 $ npm run deploy
 ```
@@ -166,3 +167,4 @@ $ npm run deploy
  ┣ styled.d.ts
  ┣ theme.ts
  ┗ util.ts : 이미지 로딩 주소
+ ```
