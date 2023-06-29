@@ -17,7 +17,7 @@
 </ol>
 
 ### Period
-> 2023-01-09 ~ 2023-01-20
+2023-01-09 ~ 2023-01-20
 
 
 <br><br>
@@ -129,6 +129,13 @@ $ npm run deploy
 <div>
 <img width="80%" src="https://github.com/eee0930/netflix_clone/assets/37135523/28e99ab8-0ed1-4573-8844-3441f565f9b4.gif"/>
 <p></p>
+
+#### skills & issues
+<ol>
+  <li>framer motion의 whileHover prop을 이용하여 사진에 마우스를 올릴 시 사진이 해당 영화의 트레일러 영상 component로 변경되도록 구현</li>
+</ol>
+</div>
+
 </div>
 
 <br>
