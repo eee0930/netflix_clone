@@ -20,6 +20,35 @@ github pages: [https://eee0930.github.io/netflix_clone](https://eee0930.github.i
 
 <br><br>
 
+## Getting Started 🏃‍♀️
+#### 1. Requirements
+For building and running the application you need:
+- [npm](https://www.npmjs.com/package/npm/v/9.2.0)
+
+#### 2. Installation
+``` bash
+$ git clone https://github.com/eee0930/netflix_clone.git
+$ cd netflix_clone
+$ code .
+```
+
+#### 3. How to run
+- Change the `REACT_APP_MOVIE_API_KEY` on the `.env.example` file.
+- Click on `View` -> `Terminal`.
+- Run 
+```
+$ npm install
+$ npm start
+```
+
+#### 4. How to deploy?
+```
+$ npm run deploy
+```
+
+
+<br><br>
+
 ## Stacks 📚
 #### Libraries & Languages
 <div>
@@ -91,35 +120,6 @@ github pages: [https://eee0930.github.io/netflix_clone](https://eee0930.github.i
 <img width="80%" src="https://github.com/eee0930/netflix_clone/assets/37135523/060ddc04-c14a-4b83-9d04-80fb0d986330.gif"/>
 <p></p>
 </div>
-
-
-<br><br>
-
-## How to run 🏃‍♀️
-### Requirements
-For building and running the application you need:
-- [Npm 9.2.0](https://www.npmjs.com/package/npm/v/9.2.0)
-
-### Installation
-``` bash
-$ git clone https://github.com/eee0930/netflix_clone.git
-$ cd netflix_clone
-$ code .
-```
-
-### How to start
-- Change the `REACT_APP_MOVIE_API_KEY` on the `.env.example` file.
-- Click on `View` -> `Terminal`.
-- Run 
-```bash
-$ npm install
-$ npm start
-```
-
-## How to deploy?
-```
-$ npm run deploy
-```
 
 <br><br>
 
