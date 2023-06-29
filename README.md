@@ -96,14 +96,29 @@ github pages: [https://eee0930.github.io/netflix_clone](https://eee0930.github.i
 <br><br>
 
 ## How to run 🏃‍♀️
+### Requirements
+For building and running the application you need:
+- [Npm 9.2.0](https://www.npmjs.com/package/npm/v/9.2.0)
 
-- Open this folder on VSCode.
+### Installation
+``` bash
+$ git clone https://github.com/eee0930/netflix_clone.git
+$ cd netflix_clone
+$ code .
+```
+
+### How to start
 - Change the `REACT_APP_MOVIE_API_KEY` on the `.env.example` file.
 - Click on `View` -> `Terminal`.
 - Run 
 ```bash
-npm i
-npm start
+$ npm install
+$ npm start
+```
+
+## How to deploy?
+```
+$ npm run deploy
 ```
 
 <br><br>
