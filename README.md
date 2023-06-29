@@ -98,10 +98,13 @@ github pages: [https://eee0930.github.io/netflix_clone](https://eee0930.github.i
 ## How to run 🏃‍♀️
 
 - Open this folder on VSCode.
-- Click on `View` -> `Terminal`.
-- Run `npm i`.
 - Change the `REACT_APP_MOVIE_API_KEY` on the `.env.example` file.
-- Run `npm start`.
+- Click on `View` -> `Terminal`.
+- Run 
+```bash
+npm i
+npm start
+```
 
 <br><br>
 
