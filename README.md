@@ -23,7 +23,7 @@ github pages: [https://eee0930.github.io/netflix_clone](https://eee0930.github.i
 ## Stacks 📚
 #### Libraries & Languages
 <div>
-<img src="https://img.shields.io/badge/TypeScript-61DAFB?style=for-the-badge&logo=typescript&logoColor=white"/>
+<img src="https://img.shields.io/badge/TypeScript-444444?style=for-the-badge&logo=typescript&logoColor=61DAFB"/>
 <img src="https://img.shields.io/badge/React-333333?style=for-the-badge&logo=React&logoColor=61DAFB"/>
 <img src="https://img.shields.io/badge/Styled Components-DB7093?style=for-the-badge&logo=styledcomponents&logoColor=white"/>
 <img src="https://img.shields.io/badge/Recoil-018EF5?style=for-the-badge&logo=redux&logoColor=white"/>
