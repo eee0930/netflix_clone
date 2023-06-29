@@ -68,7 +68,7 @@ github pages: [https://eee0930.github.io/netflix_clone](https://eee0930.github.i
   <li>slider 버튼을 빠르게 두번 클릭하면 slider가 destroy 되기 전에 새로운 slider가 render 되어 버려서 component contents가 꼬여버리는 버그가 생김.
   slider가 움직이고 있다는 의미를 가진 leaving이라는 state를 정의하고, AnimatePresence의 onExitComplete prop을 사용하여 leaving이 true인 동안은 버튼이 동작하지 않게 구현
   </li>
-  <li>화면을 렌더링했을 때 components가 render 되어서 버튼을 클릭하지 않았는데도 slider 애니메이션 효과가 나타나는 버그가 생김.
+  <li>화면을 리렌더링했을 때 components가 render 되어서 버튼을 클릭하지 않았는데도 slider 애니메이션 효과가 나타나는 버그가 생김.
   AnimatePresence에 initial prop을 이용하여 initail 값을 false로 설정하여 해결함.
   </li>
 </ol>
@@ -102,3 +102,50 @@ github pages: [https://eee0930.github.io/netflix_clone](https://eee0930.github.i
 - Run `npm i`.
 - Change the `REACT_APP_MOVIE_API_KEY` on the `.env.example` file.
 - Run `npm start`.
+
+<br><br>
+
+## Architecture
+
+#### Directory structure
+
+src
+ ┣ components
+ ┃ ┣ incl : components에 공통적으로 들어가는 components
+ ┃ ┃ ┣ Banner.tsx
+ ┃ ┃ ┣ ListCredits.tsx
+ ┃ ┃ ┣ ListSimilarContents.tsx
+ ┃ ┃ ┗ Video.tsx
+ ┃ ┣ styled : 각 components에 들어갈 style들
+ ┃ ┃ ┣ BannerStyle.tsx
+ ┃ ┃ ┣ DetailStyle.tsx
+ ┃ ┃ ┣ HeaderStyle.tsx
+ ┃ ┃ ┣ ListSearchStyle.tsx
+ ┃ ┃ ┣ ModalStyle.tsx
+ ┃ ┃ ┗ SliderStyle.tsx
+ ┃ ┣ Header.tsx
+ ┃ ┣ ListSearchContent.tsx
+ ┃ ┣ ListSearchPeople.tsx
+ ┃ ┣ Modal.tsx
+ ┃ ┣ ModalForSearch.tsx
+ ┃ ┣ ModalForTrending.tsx
+ ┃ ┣ SliderForContents.tsx
+ ┃ ┣ SliderForTrending.tsx
+ ┃ ┗ SliderForTrendingPeople.tsx
+ ┣ routes
+ ┃ ┣ DetailMovie.tsx
+ ┃ ┣ DetailPerson.tsx
+ ┃ ┣ DetailTv.tsx
+ ┃ ┣ Home.tsx
+ ┃ ┣ Search.tsx
+ ┃ ┣ Trending.tsx
+ ┃ ┗ Tv.tsx
+ ┣ App.tsx
+ ┣ Router.tsx
+ ┣ Svg.tsx
+ ┣ api.ts
+ ┣ atoms.tsx : components에 전역적으로 사용될 변수들 (recoil)
+ ┣ index.tsx
+ ┣ styled.d.ts
+ ┣ theme.ts
+ ┗ util.ts : 이미지 로딩 주소
