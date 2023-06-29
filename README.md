@@ -57,20 +57,20 @@ github pages: [https://eee0930.github.io/netflix_clone](https://eee0930.github.i
 #### 1. list contents
 <div>
 <img width="80%" src="https://github.com/eee0930/netflix_clone/assets/37135523/914f9562-b038-4b06-a5ad-4596fc825a2e.gif"/>
-<ol>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-</ol>
+
 
 ##### skills & issues
 <ol>
   <li>movies, tv show, weekly trends 화면에서 재사용할 수 있도록 slider를 compoenent로 나눔</li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>component가 destroy되거나 render 될 떄 효과를 줄 수 있는 AnimationPresence를 이용하여 slider가 넘어가는 효과를 줌. 
+  slider의 key를 index라는 number type으로 주고 slider를 넘기는 버튼을 클릭하면 index가 변화되도록 함. 
+  index가 바뀌면 reactjs는 새로운 slider가 생성되었다고 생각하여 slider 애니메이션 효과를 줄 수 있음.</li>
+  <li>slider 버튼을 빠르게 두번 클릭하면 slider가 destroy 되기 전에 새로운 slider가 render 되어 버려서 component contents가 꼬여버리는 버그가 생김.
+  slider가 움직이고 있다는 의미를 가진 leaving이라는 state를 정의하고, AnimatePresence의 onExitComplete prop을 사용하여 leaving이 true인 동안은 버튼이 동작하지 않게 구현
+  </li>
+  <li>화면을 렌더링했을 때 components가 render 되어서 버튼을 클릭하지 않았는데도 slider 애니메이션 효과가 나타나는 버그가 생김.
+  AnimatePresence에 initial prop을 이용하여 initail 값을 false로 설정하여 해결함.
+  </li>
 </ol>
 </div>
 
@@ -100,4 +100,5 @@ github pages: [https://eee0930.github.io/netflix_clone](https://eee0930.github.i
 - Open this folder on VSCode.
 - Click on `View` -> `Terminal`.
 - Run `npm i`.
+- Change the `REACT_APP_MOVIE_API_KEY` on the `.env.example` file.
 - Run `npm start`.
